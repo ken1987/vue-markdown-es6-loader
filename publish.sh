@@ -15,13 +15,9 @@ then
 
   npm version $VERSION --message "[release] $VERSION"
   echo
-  echo
-  echo
 
   # publish
   echo "npm publish ..."
   npm publish
-  echo
-  echo
   echo
 fi
