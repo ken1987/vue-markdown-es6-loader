@@ -1,0 +1,60 @@
+{
+  "name": "vue-markdown-es6-loader",
+  "version": "0.0.1",
+  "description": "Converting Markdown to Vue single-file component loader for Webpack.",
+  "keywords": [
+    "markdown",
+    "vue",
+    "vue-loader",
+    "webpack",
+    "loader"
+  ],
+  "author": {
+    "name": "ken1987",
+    "email": "ken198701@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ken1987/vue-markdown-es6-loader.git"
+  },
+  "engines": {
+    "node": ">=6.0.0",
+    "npm": ">=3.0.0"
+  },
+  "scripts": {
+    "publish": "bash publish.sh",
+    "start": "webpack-dev-server --config test/webpack.config.js --inline --hot"
+  },
+  "files": [
+    "index.js"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "highlight.js": "^9.9.0",
+    "marked": "^0.3.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-loader": "^6.2.10",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1",
+    "webpack-dev-middleware": "^1.10.0",
+    "webpack-hot-middleware": "^2.16.1",
+    "html-webpack-plugin": "^2.28.0",
+    "extract-text-webpack-plugin": "^2.0.0",
+    "eslint": "^3.15.0",
+    "eslint-plugin-html": "^2.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-config-airbnb-base": "^9.0.0",
+    "eslint-loader": "^1.6.1",
+    "style-loader": "^0.13.2",
+    "css-loader": "^0.26.1",
+    "vue-loader": "^10.3.0",
+    "vue": "^2.2.1",
+    "vue-template-compiler": "^2.1.10"
+  }
+}
