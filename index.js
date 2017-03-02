@@ -5,7 +5,7 @@ const marked = require('marked')
 
 // 识别 markdown 中标记为 vue 的代码片段
 const regVueCode = /`{3,5}\s*vue\s*[\r\n]([\s\S]*?)[\r\n]`{3,5}(?!`)/
-const uuid = 'marked' + (+new Date())
+const uuid = 'vmd' + (+new Date())
 
 function getImportCodeString(url, id) {
   let rq = '\'' + url + '\''
