@@ -22,7 +22,7 @@
     "npm": ">=3.0.0"
   },
   "scripts": {
-    "publish": "bash publish.sh",
+    "release": "bash release.sh",
     "start": "webpack-dev-server --config test/webpack.config.js --inline --hot"
   },
   "files": [
