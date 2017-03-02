@@ -4,7 +4,7 @@ const hljs = require('highlight.js')
 const marked = require('marked')
 
 // 识别 markdown 中标记为 vue 的代码片段
-const regVueCode = /`{3,5}\s*vue\s*[\r\n]([\s\S]*?)[\r\n]`{3,5}(?!`)/
+const regVueCode = /`{3,5}\s*vue\s*[\r\n]([\s\S]*?)[\r\n]`{3,5}(?!`)/gi
 const uuid = 'vmd' + (+new Date())
 
 function getImportCodeString(url, id) {
@@ -35,7 +35,7 @@ module.exports = function markdownES6Loader(source) {
   const newSource = source.replace(regVueCode, (snippet, _1) => {
     try {
       // 删除开始和结束的空白
-      const src = _1.replace(/^\s|\s$/, '')
+      const src = _1.replace(/^\s|\s$/g, '')
 
       const rp = path.resolve(path.dirname(resourcePath), src)
       const code = fs.readFileSync(rp, 'utf-8')
