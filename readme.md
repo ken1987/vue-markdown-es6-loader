@@ -7,6 +7,7 @@ Converting Markdown to Vue single-file component loader for Webpack.
 * node >= 6.0.0
 * npm >= 3.0.0
 * webpack >= 2.0.0
+* 输出的模块遵循 es6 module
 
 ## install
 
@@ -71,8 +72,7 @@ npm i vue-source-loader
 ``````
 ``` vue
   ./code.vue
-``````
-```
+`` `
 ``````
 
 * 输入结果
