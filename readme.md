@@ -71,6 +71,7 @@ npm i vue-source-loader
 ``````
 ``` vue
   ./code.vue
+``````
 ```
 ``````
 
