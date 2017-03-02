@@ -30,9 +30,9 @@ npm i vue-source-loader
       }, {
         loader: 'vue-markdown-es6-loader',
         options: {
-          prefix: '<div>',  // 开始的开头
-          postfix: '</div>',// 结束的代码
-          highlightStyle: 'default' // 代码高亮
+          prefix: '<div>', 
+          postfix: '</div>',
+          highlightStyle: 'default'
         }
       }]
     }]
