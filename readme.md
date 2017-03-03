@@ -119,6 +119,6 @@ npm i vue-source-loader
 * Verify `prefix` and `postfix` are closed
 * asynchronous read file
 
-[1]:https://github.com/isagalaev/highlight.js
-[2]:https://github.com/isagalaev/highlight.js/tree/master/src/styles
-[3]:https://github.com/chjj/marked
+[1]: https://github.com/isagalaev/highlight.js
+[2]: https://github.com/isagalaev/highlight.js/tree/master/src/styles
+[3]: https://github.com/chjj/marked
