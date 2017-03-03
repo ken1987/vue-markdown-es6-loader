@@ -88,11 +88,11 @@ npm i vue-source-loader
   * set code type to  `vue`
   * write path into code area
 
-``````
-``` vue
+```
+`` ` vue
   ./code.vue
 `` `
-``````
+```
 
 * reslute
 
