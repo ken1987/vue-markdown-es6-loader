@@ -7,7 +7,7 @@ Converting Markdown to Vue single-file component loader for Webpack.
 * node >= 6.0.0
 * npm >= 3.0.0
 * webpack >= 2.0.0
-* 输出的模块遵循 es6 module
+* output es6 module
 
 ## install
 
@@ -25,12 +25,12 @@ npm i vue-source-loader
       use: [{
         loader: 'vue-loader',
         options: {
-           js: 'babel-loader'
+           js: 'babel-loader' // output es6 module
         }
       }, {
         loader: 'vue-markdown-es6-loader',
         options: {
-          prefix: '<div>', 
+          prefix: '<div>',
           postfix: '</div>',
           highlightStyle: 'default'
         }
@@ -40,34 +40,53 @@ npm i vue-source-loader
 }
 ```
 
-## options 
+## options
 
-* prefix
+### prefix
 
-  代码开始处
+  * Type: string
+  * Default: `<div>`
+  * Details:
 
-* postfix
+    Element tag of output start.
 
-  代码结尾处
+    > Vue warn: Component template should contain exactly one root element
 
-* highlightStyle
 
-  代码高亮可选样式，依赖 [`highlight.js`][1]
-  默认值：`default`，可选值： `highlight.js` [样式][2]
+### postfix
+
+  * Type: string
+  * Default: `</div>`
+  * Details:
+
+    Element tag of output end.
+
+    > Vue warn: Component template should contain exactly one root element
+
+### highlightStyle
+
+  * Type: string
+  * Default: `default`
+  * Optional: refer to [style filename][2]
+  * Details:
+
+    [`highlight.js`][1] style.
 
 * markedOptions
 
-  配置 markdown 生成的 `html`
+  * Type: string
+  * Optional: refer to [marked options][3]
+  * Details:
 
-  参考 marked [配置][3]
+    A markdown parser options.
+
 
 ## usage
 
-* markdown 中引用 .vue 模块
+*  use `.vue` in markdown
 
-  在代码区块中设置代码类型 `vue`
-
-  在代码区块内设置模块路径
+  * set code type to  `vue`
+  * write path into code area
 
 ``````
 ``` vue
@@ -75,7 +94,7 @@ npm i vue-source-loader
 `` `
 ``````
 
-* 输入结果
+* reslute
 
 ``` html
 <template>
@@ -94,6 +113,11 @@ npm i vue-source-loader
     import 'highlight.js/styles/default.css'
 </script>
 ```
+
+## TODO
+
+* Verify `prefix` and `postfix` are closed
+* asynchronous read file
 
 [1]:https://github.com/isagalaev/highlight.js
 [2]:https://github.com/isagalaev/highlight.js/tree/master/src/styles

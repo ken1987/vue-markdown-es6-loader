@@ -20,11 +20,11 @@ module.exports = function markdownES6Loader(source) {
 
   const callback = this.async()
 
-  const query = Object.assign({}, this.query, {
+  const query = Object.assign({}, {
     prefix: '<div>',
     postfix: '</div>',
     highlightStyle: 'default'
-  })
+  }, this.query)
 
   const resourcePath = this.resourcePath
   const highlightStyle = query.highlightStyle
