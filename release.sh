@@ -17,4 +17,7 @@ then
   echo "npm publish ..."
   npm publish
   echo
+  echo "git push ..."
+  git push
+  echo
 fi
