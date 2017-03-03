@@ -12,7 +12,7 @@ Converting Markdown to Vue single-file component loader for Webpack.
 ## install
 
 ``` shell
-npm i vue-source-loader
+npm i vue-markdown-es6-loader
 ```
 
 ## webpack 2.x config
