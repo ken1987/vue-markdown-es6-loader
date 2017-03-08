@@ -89,9 +89,9 @@ npm i vue-markdown-es6-loader
   * write path into code area
 
 ```
-`` ` vue
-  ./code.vue
-`` `
+  ``` vue
+    ./code.vue
+  ```
 ```
 
 * reslute
