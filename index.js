@@ -74,7 +74,7 @@ module.exports = function markdownES6Loader(source) {
     newSource,
     Object.assign({}, query.markedOptions, {
       langPrefix: highlightStyle + ' hljs ',
-      highlight: code => hljs.highlightAuto(code).value
+      highlight: code => hljs.highlightAuto(code).value.replace(/[{}()[\]]/g, '<span>$&</span>')
     }),
     (err, code) => {
       if (err) {

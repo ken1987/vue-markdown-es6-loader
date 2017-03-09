@@ -1,3 +1,12 @@
 <template>
-  <div>Code...</div>
+  <div>{{ text }}</div>
 </template>
+<script>
+  export default {
+    data(){
+      return {
+        text: 'Code...'
+      }
+    }
+  }
+</script>
