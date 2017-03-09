@@ -1,6 +1,6 @@
 {
   "name": "vue-markdown-es6-loader",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Converting Markdown to Vue single-file component loader for Webpack.",
   "keywords": [
     "markdown",
