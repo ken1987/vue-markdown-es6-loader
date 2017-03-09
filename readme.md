@@ -87,6 +87,7 @@ npm i vue-markdown-es6-loader
 
   * set code type to  `vue`
   * write path into code area
+<<<<<<< HEAD
 
 
 \``` vue
@@ -94,6 +95,13 @@ npm i vue-markdown-es6-loader
   ./code.vue
 
 \```
+=======
+```
+  \``` vue
+    ./code.vue
+  \```
+```
+>>>>>>> dec7f849a973ebb178c0fcfde4cdbaeb548e0903
 
 * reslute
 
